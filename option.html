@@ -1,0 +1,86 @@
+
+<?php
+
+session_start();
+if(isset($_SESSION['uid']))
+{
+	
+	echo '';
+}
+?>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.formdes 
+{
+	margin : 20px 0px 0px 0px;
+	padding: 10px;
+	border-width : 5px;
+	border-style : ridge;
+	border-radius : 10px;
+}
+.center 
+{
+	margin : 170px 0px -150px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7%;
+}
+.back
+{
+	background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WkIgKZFjgvodZt0C9eqaktNVtFWRBeYChoMgn3vMxd-kB5sk") ;
+	background-size : cover;
+	
+	
+}
+</style>
+ </head>
+<body class="back">
+
+
+
+
+<img src = "http://www.spit.ac.in/wp-content/uploads/2017/02/bhavans_logo.png" class="center" >
+<h2 style = "text-align: center;margin :200px 0px 0px 0px; ">Welcome Admin</h2>
+<div class = "container-fluid ">
+<div class = "row">
+	<div class = "col-md-4 col-sm-4 col-xs-12"></div>
+	<div class = "col-md-4 col-sm-4 col-xs-12 ">
+		
+
+			<form class = "formdes" method = "POST">
+				<h2  style = "text-align: center;">MENU</h2>
+				<div class = "form-group">
+					<button type="submit" class="btn btn-default btn-block" name = "insert"><a href = "insert.php">Insert Student Record</a></button>
+				</div>
+			  
+				<div class = "form-group">
+					<button type="submit" class="btn btn-default btn-block" name = "update"><a href = " update.php">Update Student Record</a></button>
+				</div>
+				
+				<div class = "form-group">
+					<button type="submit" class="btn btn-default btn-block" name = "delete"><a href = " delete.php">Delete Student Record</a></button>
+				</div>
+				
+				<div class = "form-group">
+					<button type="submit" class="btn btn-default btn-block" name = "submit" ><a href = "logout.php">Log Out</a></button>
+				</div>
+				
+				
+			</form>
+		
+	</div>
+	<div class = "col-md-4 col-sm-4 col-xs-12"></div>
+	</div>
+</div>
+
+</body>
+</html>
+
